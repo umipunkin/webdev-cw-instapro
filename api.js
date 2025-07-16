@@ -67,3 +67,25 @@ export function uploadImage({ file }) {
     return response.json();
   });
 }
+
+export function likePost(postId, token) {
+  return fetch(postsHost + `/${postId}/like`, {
+    method: "POST",
+    headers: {
+      Authorization: token,
+    },
+  }).then((res) => {
+    return res.json();
+  });
+}
+
+export function dislikePost(postId, token) {
+  return fetch(postsHost + `/${postId}/dislike`, {
+    method: "POST",
+    headers: {
+      Authorization: token,
+    },
+  }).then((res) => {
+    return res.json();
+  });
+}
