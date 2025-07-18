@@ -196,3 +196,22 @@
   width: 100%;
   text-align: center;
 }
+
+.add-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.add-post-textarea {
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.add-post-button {
+  align-self: flex-end;
+}
